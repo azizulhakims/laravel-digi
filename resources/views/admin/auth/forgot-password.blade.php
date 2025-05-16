@@ -6,7 +6,8 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('password.email') }}">
+    <h1>Admin Forgate password</h1>
+    <form method="POST" action="{{ route('admin.password.email') }}">
         @csrf
 
         <!-- Email Address -->
